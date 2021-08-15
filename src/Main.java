@@ -6,13 +6,13 @@ public class Main {
 
         if (refill > 1_000) {
             bonus = refill / 100;
-            System.out.println("Кол-во бонусов = " + bonus);
+
         } else {
             bonus = 0;
-            System.out.println("Бонусов нет");
         }
 
         int total = balance + refill + bonus;
+        System.out.println("Кол-во бонусов = " + bonus);
         System.out.println("Итоговая сумма = " + total);
     }
 }
